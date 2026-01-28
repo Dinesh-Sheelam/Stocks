@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass-panel {
+    @apply backdrop-blur-[16px] bg-[rgba(16,25,34,0.7)] border border-[rgba(255,255,255,0.08)];
+  }
+  .glow-blue {
+    box-shadow: 0 0 15px rgba(19, 127, 236, 0.3);
+  }
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.25);
+  }
+}
+
+body {
+  background: radial-gradient(circle at top right, #1a1b3a, #0a0b1e);
+  background-attachment: fixed;
+  color: white;
+  min-height: 100vh;
+}
